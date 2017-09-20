@@ -5,15 +5,9 @@ import dash_core_components as dcc
 from app import app
 
 layout = html.Div([
-    html.H3('App 1'),
-    dcc.Dropdown(
-        id='app-1-dropdown',
-        options=[
-            {'label': 'App 1 - {}'.format(i), 'value': i} for i in [
-                'NYC', 'MTL', 'LA', 'Atlanta'
-            ]
-        ]
-    ),
+    html.Div([
+        html.H1('Welcome to Book Ratings')
+    ]),
     html.Div(id='app-1-display-value'),
     dcc.Link('Go to App 2', href='/apps/app2')
 ])

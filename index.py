@@ -7,7 +7,6 @@ from apps import app1
 
 
 app.layout = html.Div([
-    html.H6('App 1'),
     dcc.Location(id='url', refresh=False),
     html.Div(id='page-content')
 ])
@@ -24,6 +23,10 @@ def display_page(pathname):
     #      return app2.layout
     else:
         return '404'
+
+app.css.append_css({
+    'external_url': 'https://codepen.io/Ravenusmc/pen/WZxxPr.css'
+})
 
 if __name__ == '__main__':
     app.run_server(debug=True)

@@ -5,10 +5,16 @@ import dash_core_components as dcc
 from app import app
 
 layout = html.Div([
+
     html.Div([
-        html.H1('Welcome to Book Ratings')
+
+        html.Div([
+            html.P('Hello World', className='center test'),
+        ], className='test')
+        
     ]),
-    html.Div(id='app-1-display-value'),
+
+    html.Div(id='app-1-display-value', className='test'),
     dcc.Link('Go to App 2', href='/apps/app2')
 ])
 

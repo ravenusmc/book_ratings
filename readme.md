@@ -1,7 +1,7 @@
 # Book_ratings
 ## Intro
 
-This is a project that will be looking at book ratings for a couple thousand books. The real purpose of this project though is to experiment with Dash, a new Python data visualization tool, and see how well it works. 
+This is a project that will be looking at book ratings for a couple thousand books. 
 
 
 # Getting started

@@ -54,4 +54,4 @@ class User():
           values
           (%s, %s, %s)"""
         self.cursor.execute(self._SQL, (name, username, hashed))
-self.conn.commit()
+        self.conn.commit()

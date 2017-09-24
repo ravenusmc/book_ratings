@@ -1,6 +1,9 @@
 #importing outside libraries for use in the project
 from flask import Flask, session, jsonify, redirect, url_for, escape, render_template, request, flash
 
+#Bring in personal files that I wrote. 
+from user import * 
+
 #Setting up Flask
 app = Flask(__name__)
 
@@ -33,6 +36,18 @@ def landing():
 
 @app.route('/sign_up', methods=['GET', 'POST'])
 def signup():
+  if request.method == 'POST':
+    #Recieving the information from the form from the user.
+    name = request.form['name']
+    username = request.form['username']
+    password = request.form['password']
+    user = User()
+    #Encrypting the password
+    password, hashed = user.encrypt_pass(password)
+    #Adding the user to the database
+    user.insert(name, username, hashed)
+    #Letting them into the index Page
+    return redirect(url_for('home'))
   return render_template('sign_up.html')
 
 @app.route('/home')

@@ -27,11 +27,9 @@ def landing():
         #If the user is not in the database then they will be sent to the
         #sign up page.
         if not_found:
-          print('Nadde')
-          #flash('Username not found, maybe sign up!')
+          flash('Username not found, maybe sign up!')
         elif password_no_match:
-          print('no pass match!')
-          #flash('Password does not match! Maybe sign up!')
+          flash('Password does not match! Maybe sign up!')
   return render_template('login.html')
 
 @app.route('/sign_up', methods=['GET', 'POST'])

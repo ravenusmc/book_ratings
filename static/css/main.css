@@ -55,3 +55,20 @@ input {
   justify-content: center;
   height: 90%;
 }
+
+/* CSS for Home Page */
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 50px;
+}
+
+.first_grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  border: 2px solid blue;
+}

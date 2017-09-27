@@ -72,3 +72,13 @@ input {
   grid-template-columns: 50% 50%;
   border: 2px solid blue;
 }
+
+
+@media only all and (max-width: 758px){
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+}

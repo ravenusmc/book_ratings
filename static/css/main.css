@@ -7,6 +7,14 @@ body, html {
   text-align: center;
 }
 
+button {
+  background-color: #003399;
+  border-color: #003399;
+  color: white;
+  border-radius: 5px;
+  padding: 12px;
+}
+
 /* CSS for login.html page */
 .login_main {
   display: flex;
@@ -71,6 +79,19 @@ input {
   display: grid;
   grid-template-columns: 50% 50%;
   border: 2px solid blue;
+}
+
+.box_shadow {
+  border: 2px solid black;
+  border-radius: 8px;
+  box-shadow: 10px 10px 5px #888888;
+  padding: 10px;
+}
+
+.title_lookUp_div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 

@@ -82,6 +82,7 @@ input {
   box-shadow: 10px 10px 5px #888888;
   height: 150px;
   width: 300px;
+  padding: 10px;
 }
 
 .div_paragraph {
@@ -95,6 +96,7 @@ input {
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .first_grid {

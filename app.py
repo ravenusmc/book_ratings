@@ -62,6 +62,15 @@ def logout():
   session.pop('username', None)
   return redirect(url_for('landing'))
 
+### Functions dealing with ajax calls below ###
+@app.route('/book_look_up',methods=['POST'])
+def book_look_up():
+  #Recieving the data from the ajax call
+  title = request.form['title']
+  if title: 
+    return jsonify(result = title)
+  return jsonify({'error' : 'Missing Data'})
+
 # set the secret key. keep this really secret:
 app.secret_key = 'n3A\xef(\xb0Cf^\xda\xf7\x97\xb1x\x8e\x94\xd5r\xe0\x11\x88\x1b\xb9'
 

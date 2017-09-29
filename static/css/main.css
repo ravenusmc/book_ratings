@@ -15,6 +15,10 @@ button {
   padding: 12px;
 }
 
+.a_tag_fix {
+  color: white;
+}
+
 /* CSS for login.html page */
 .login_main {
   display: flex;

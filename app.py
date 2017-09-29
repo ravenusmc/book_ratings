@@ -2,6 +2,7 @@
 from flask import Flask, session, jsonify, redirect, url_for, escape, render_template, request, flash
 
 #Bring in personal files that I wrote. 
+from books import *
 from user import * 
 
 #Setting up Flask
@@ -67,8 +68,14 @@ def logout():
 def book_look_up():
   #Recieving the data from the ajax call
   title = request.form['title']
+  #The data in the CSV file has the first letter of each word capitalized 
+  title = title.title()
+  #Creating the object that will deal with the data from CSV file.
+  book = Books()
+  rating = book.book_rating(title)
   if title: 
-    return jsonify(result = title)
+    rating = 7
+    return jsonify(result = rating)
   return jsonify({'error' : 'Missing Data'})
 
 # set the secret key. keep this really secret:

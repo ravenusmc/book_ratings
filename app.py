@@ -56,7 +56,8 @@ def home():
   #creating the book object to get data
   book = Books()
   high_book_list = book.high_rating()
-  return render_template('home.html', high_books = high_book_list)
+  low_list = book.low_ratings()
+  return render_template('home.html', high_books = high_book_list, low_books = low_list)
 
 
 #This function is what will log out the user.

@@ -38,9 +38,21 @@ class Books():
     def low_ratings(self):
         #Here getting the books with low ratings
         low_rating = self.__data[self.__data.average_rating <= 2.8]
-        #Getting just the book titles.
-        low_rating = low_rating
-        print()
+        #Setting up a counter
+        count = 0
+        #This list will hold the books
+        low_list = []
+        #while loop to go through the books that have low ratings
+        while count < len(low_rating):
+            #Here I get the book with the lowest rating 
+            book = low_rating.iloc[count][10]
+            #Place that book into the list
+            low_list.append(book)
+            #Increment the count by one
+            count += 1
+        return low_list
+
+
 
 
 #Problem: data is gettting messed up when coming in through JSON

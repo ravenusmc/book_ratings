@@ -76,6 +76,11 @@
 
     <div class='box_shadow'>
       <h1 class='center'>Top 5 Lowest Rated Books</h1>
+      {% for book in low_books %}
+      <ul>
+        <li>{{ book }}</li>
+      </ul>
+      {% endfor %}
     </div>
 
 </main>

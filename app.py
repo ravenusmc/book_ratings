@@ -69,12 +69,11 @@ def book_look_up():
   #Recieving the data from the ajax call
   title = request.form['title']
   #The data in the CSV file has the first letter of each word capitalized 
-  title = title.title()
+  #title = title.title()
   #Creating the object that will deal with the data from CSV file.
   book = Books()
   rating = book.book_rating(title)
   if title: 
-    rating = 7
     return jsonify(result = rating)
   return jsonify({'error' : 'Missing Data'})
 

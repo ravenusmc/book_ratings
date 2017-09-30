@@ -53,7 +53,10 @@ def signup():
 def home():
   if 'username' not in session:
     return redirect(url_for('signup'))
-  return render_template('home.html')
+  #creating the book object to get data
+  book = Books()
+  high_book_list = book.high_rating()
+  return render_template('home.html', high_books = high_book_list)
 
 
 #This function is what will log out the user.

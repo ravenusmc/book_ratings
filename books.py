@@ -18,11 +18,11 @@ class Books():
         #returning the data
         return rating
 
-    #This method will get the five books with the top ratings
+    #This method will get the books with the highest ratings
     def high_rating(self):
         #Here I am getting the books with the highest ratings. 
         high_rating = self.__data[self.__data.average_rating >= 4.7]
-        # Length is 16
+        #Getting just the book titles.
         rating = high_rating.iloc[0][10]
         #Setting up a counter
         count = 0
@@ -32,6 +32,15 @@ class Books():
             book = high_rating.iloc[count][10]
             book_list.append(book)
             count += 1
+        return book_list
+
+    #This method will get the books with the lowest ratings
+    def low_ratings(self):
+        #Here getting the books with low ratings
+        low_rating = self.__data[self.__data.average_rating <= 2.8]
+        #Getting just the book titles.
+        low_rating = low_rating
+        print()
 
 
 #Problem: data is gettting messed up when coming in through JSON
@@ -42,7 +51,7 @@ class Books():
 book = Books()
 # rating = book.book_rating('The Girl on the Train')
 # print('Rating:', rating)
-book.high_rating()
+book.low_ratings()
 
 # scrap code 
 

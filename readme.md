@@ -1,7 +1,7 @@
 # Book_ratings
 ## Intro
 
-This is a project that will be looking at book ratings for a couple thousand books. 
+This is a project that will be looking at book ratings for a couple thousand books. The project is not large and compared to some of the other projects that I have recently been working on, it is quite small. The data set for this project may be found here: https://www.kaggle.com/zygmunt/goodbooks-10k.
 
 
 # Getting started

@@ -41,14 +41,16 @@ class Books():
         low_rating = self.__data[self.__data.average_rating <= 2.8]
         #Setting up a counter
         count = 0
-        #This list will hold the books
-        low_list = []
+        #This dictionary will hold the books
+        low_list = {}
         #while loop to go through the books that have low ratings
         while count < len(low_rating):
             #Here I get the book with the lowest rating 
             book = low_rating.iloc[count][10]
+            author = low_rating.iloc[count][7]
+            low_list[book] = author
             #Place that book into the list
-            low_list.append(book)
+            # low_list.append(book)
             #Increment the count by one
             count += 1
         return low_list

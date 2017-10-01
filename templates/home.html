@@ -76,9 +76,9 @@
 
     <div class='box_shadow'>
       <h1 class='center'>Top 5 Lowest Rated Books</h1>
-      {% for book in low_books %}
+      {% for key, value in low_books.items() %}
       <ul>
-        <li>{{ book }}</li>
+        <li><span>Book:</span> {{ key }} <span>Author:</span> {{ value }}</li>
       </ul>
       {% endfor %}
     </div>

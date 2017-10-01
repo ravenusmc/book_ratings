@@ -26,11 +26,12 @@ class Books():
         rating = high_rating.iloc[0][10]
         #Setting up a counter
         count = 0
-        #This list will hold the books
-        book_list = []
+        #This dictionary will hold the books
+        book_list = {}
         while count < len(high_rating):
             book = high_rating.iloc[count][10]
-            book_list.append(book)
+            author = high_rating.iloc[count][7]
+            book_list[book] = author
             count += 1
         return book_list
 
@@ -63,7 +64,7 @@ class Books():
 book = Books()
 # rating = book.book_rating('The Girl on the Train')
 # print('Rating:', rating)
-book.low_ratings()
+book.high_rating()
 
 # scrap code 
 

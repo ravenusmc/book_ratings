@@ -122,6 +122,10 @@ input {
   align-items: center;
 }
 
+span {
+  font-weight: bold;
+}
+
 
 @media only all and (max-width: 758px){
 

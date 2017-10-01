@@ -57,21 +57,3 @@ class Books():
 
 
 
-
-#Problem: data is gettting messed up when coming in through JSON
-
-#The Catcher in the Rye
-#The Fault in Our Stars
-
-book = Books()
-# rating = book.book_rating('The Girl on the Train')
-# print('Rating:', rating)
-book.high_rating()
-
-# scrap code 
-
-# print(info.iloc[0][12])
-#rating = info.average_rating
-#I now need to get the exact rating
-# rating = rating.reset_index().values[0][1] 
-# print(rating)

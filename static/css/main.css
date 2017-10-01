@@ -134,4 +134,9 @@ span {
     grid-template-columns: 1fr;
   }
 
+  .section_one {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
 }

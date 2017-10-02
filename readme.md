@@ -28,6 +28,8 @@ website.
 
 # Issues
 
+The one aspect of this project that I do not like is the search feature to get a specific book's rating. In order to return a value back, the book title has to be entered exactly the same way as it is in the CSV file. Thus, It must be It and not it. Yes, I could use the .title() method but how to solve a book title like The Girl on the Train? Where on and the have to be lowercase. So, to do this I believe Regex would have to be used and something that I will look into at a later date. 
+
 
 # Preview
 

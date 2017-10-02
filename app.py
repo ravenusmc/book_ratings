@@ -19,8 +19,6 @@ def landing():
     #Checking to see if the user is in the database.
     flag, not_found, password_no_match = user.check(username, password)
     #Conditional statement to test if the user is a member of the site.
-    print('FLAG:', flag)
-    input()
     if flag == True:
         #If the user is in the database, the user gets sent to the index page.
         session['username'] = request.form['username']

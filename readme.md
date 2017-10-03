@@ -33,6 +33,6 @@ The one aspect of this project that I do not like is the search feature to get a
 
 # Preview
 
-To see a video that talks about this project please go here: Coming Soon
+To see a video that talks about this project please go here: https://www.youtube.com/watch?v=3qLRz1b3cbA&feature=em-upload_owner
 
-Blog entry: Coming Soon 
+Blog entry: https://codingsaga.wordpress.com/2017/10/03/book_ratings-project/
